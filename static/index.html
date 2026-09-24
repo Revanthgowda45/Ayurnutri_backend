@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AyurNutri Backend Test Dashboard</title>
+    <style>
+        :root {
+            --primary: #2e7d32;
+            --primary-light: #60ad5e;
+            --bg-color: #f4f7f6;
+            --card-bg: #ffffff;
+            --text-main: #333;
+            --border: #e0e0e0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: var(--primary);
+            margin-bottom: 40px;
+        }
+        .container {
+            display: flex;
+            gap: 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+        }
+        .card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            flex: 1;
+            min-width: 350px;
+            border: 1px solid var(--border);
+        }
+        .card h2 {
+            margin-top: 0;
+            color: var(--primary);
+            border-bottom: 2px solid var(--primary-light);
+            padding-bottom: 10px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+            font-size: 0.9em;
+        }
+        select, input[type="number"], input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: var(--primary-light);
+        }
+        .result-box {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f9f9f9;
+            border-left: 4px solid var(--primary);
+            border-radius: 4px;
+            display: none;
+        }
+        .loader {
+            display: none;
+            margin-top: 10px;
+            color: var(--primary);
+            font-weight: bold;
+            text-align: center;
+        }
+        .scrollable-section {
+            max-height: 400px;
+            overflow-y: auto;
+            padding-right: 10px;
+            border: 1px solid #eee;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>AyurNutri Hybrid AI Dashboard</h1>
+    
+    <div class="container">
+        <!-- Dosha ML Pipeline -->
+        <div class="card">
+            <h2>1. Dosha ML Classifier (15 Features)</h2>
+            <p>Tests the Random Forest Model for Dosha prediction.</p>
+            <div class="scrollable-section">
+                <!-- Physical -->
+                <div class="form-group"><label>Body Frame</label><select id="body_frame"><option value="vata">Thin/Small</option><option value="pitta">Medium</option><option value="kapha">Broad/Large</option></select></div>
+                <div class="form-group"><label>Walk & Talk</label><select id="walk_and_talk"><option value="vata">Fast</option><option value="pitta">Moderate</option><option value="kapha">Slow/Steady</option></select></div>
+                <div class="form-group"><label>Weather Reaction</label><select id="weather_reaction"><option value="vata">Dislike Cold</option><option value="pitta">Dislike Heat</option><option value="kapha">Dislike Damp</option></select></div>
+                <div class="form-group"><label>Sweating</label><select id="sweating"><option value="vata">Minimal</option><option value="pitta">A lot</option><option value="kapha">Moderate/Heavy</option></select></div>
+                <div class="form-group"><label>Appetite</label><select id="appetite"><option value="vata">Irregular</option><option value="pitta">Strong</option><option value="kapha">Steady</option></select></div>
+                <div class="form-group"><label>Skin</label><select id="skin"><option value="vata">Dry/Rough</option><option value="pitta">Oily/Warm</option><option value="kapha">Thick/Cool</option></select></div>
+                <div class="form-group"><label>Hair</label><select id="hair"><option value="vata">Dry/Wavy</option><option value="pitta">Straight/Thin</option><option value="kapha">Thick/Curly</option></select></div>
+                <div class="form-group"><label>Lips & Teeth</label><select id="lips_and_teeth"><option value="vata">Thin Lips</option><option value="pitta">Medium</option><option value="kapha">Large/Smooth</option></select></div>
+                <div class="form-group"><label>Eyes</label><select id="eyes"><option value="vata">Small/Dry</option><option value="pitta">Medium/Reddish</option><option value="kapha">Big/Attractive</option></select></div>
+                <div class="form-group"><label>General Signs</label><select id="general_signs"><option value="vata">Cracking Joints</option><option value="pitta">Moles</option><option value="kapha">Disproportionate</option></select></div>
+                <!-- Mental -->
+                <div class="form-group"><label>Memory</label><select id="memory"><option value="vata">Quick learn/forget</option><option value="pitta">Average/Retain</option><option value="kapha">Slow learn/Retain</option></select></div>
+                <div class="form-group"><label>Mind</label><select id="mind"><option value="vata">Restless</option><option value="pitta">Impatient</option><option value="kapha">Calm</option></select></div>
+                <div class="form-group"><label>Mind on Actions</label><select id="mind_on_actions"><option value="vata">Over thinking</option><option value="pitta">Quick implementation</option><option value="kapha">Lazy/Procrastinate</option></select></div>
+                <div class="form-group"><label>Sleep Quality</label><select id="sleep_quality"><option value="vata">Light/Disturbed</option><option value="pitta">Moderate</option><option value="kapha">Deep/Heavy</option></select></div>
+                <div class="form-group"><label>Emotional Nature</label><select id="emotional_nature"><option value="vata">Worry/Anxious</option><option value="pitta">Irritable/Angry</option><option value="kapha">Loving/Caring</option></select></div>
+            </div>
+            <button onclick="assessDosha()">Predict Dosha</button>
+            <div id="doshaLoader" class="loader">Processing...</div>
+            <div id="doshaResult" class="result-box"></div>
+        </div>
+
+        <!-- Meal Optimization Pipeline -->
+        <div class="card">
+            <h2>2. Meal Optimizer (v4.0)</h2>
+            <p>Tests the Dynamic BMR & Constraint Optimization Engine.</p>
+            <div class="scrollable-section">
+                <!-- Profile inputs -->
+                <div class="form-group"><label>Target Dosha</label><select id="mealDosha"><option value="Vata">Vata</option><option value="Pitta">Pitta</option><option value="Kapha">Kapha</option></select></div>
+                <div class="form-group"><label>Weight (kg)</label><input type="number" id="weight_kg" value="70"></div>
+                <div class="form-group"><label>Height (cm)</label><input type="number" id="height_cm" value="175"></div>
+                <div class="form-group"><label>Age</label><input type="number" id="age" value="30"></div>
+                <div class="form-group"><label>Gender</label><select id="gender"><option value="Male">Male</option><option value="Female">Female</option></select></div>
+                <div class="form-group"><label>Goal</label><select id="goal"><option value="Balance Doshas">Balance Doshas</option><option value="Lose Weight">Lose Weight</option><option value="Gain Weight">Gain Weight</option><option value="Build Muscle">Build Muscle</option><option value="Boost Energy">Boost Energy</option></select></div>
+                <div class="form-group"><label>Dietary Preference</label><select id="dietary_preference"><option value="Mixed / Both">Mixed / Both</option><option value="Vegetarian">Vegetarian</option><option value="Vegan">Vegan</option><option value="Non-Veg">Non-Veg</option></select></div>
+                
+                <hr style="border-top:1px solid #ccc; margin: 20px 0;" />
+                <p style="font-size: 0.85em; color:#666; margin-top:0;"><i>Manual Fallbacks (Used if Weight is blank)</i></p>
+                <div class="form-group"><label>Target Calories</label><input type="number" id="calories" value="2000"></div>
+                <div class="form-group"><label>Target Protein (g)</label><input type="number" id="protein" value="70"></div>
+                <div class="form-group"><label>Target Carbs (g)</label><input type="number" id="carbs" value="200"></div>
+                <div class="form-group"><label>Target Fat (g)</label><input type="number" id="fat" value="60"></div>
+                
+                <div class="form-group">
+                    <label>Cuisine Category</label>
+                    <select id="cuisine">
+                        <option value="Any">All Cuisines</option>
+                        <option value="Pan-India">Pan-India (General)</option>
+                        <option value="Continental/Global Cuisine">Global Cuisines</option>
+                        <option value="Mughlai / North Indian">Mughlai / North Indian</option>
+                        <option value="Indo-Chinese">Indo-Chinese</option>
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Jammu & Kashmir">Jammu & Kashmir</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="West Bengal">West Bengal</option>
+                    </select>
+                </div>
+            </div>
+            <button onclick="generateMeal()">Generate 7-Day Meal Plan</button>
+            <div id="mealLoader" class="loader">Processing...</div>
+            <div id="mealResult" class="result-box"></div>
+        </div>
+
+        <!-- RAG Chatbot Pipeline -->
+        <div class="card">
+            <h2>3. Ayurvedic Chatbot</h2>
+            <p>Tests the RAG Vector Search & Hybrid AI integration.</p>
+            <div class="form-group">
+                <label>Ask an Ayurvedic Question</label>
+                <input type="text" id="chatQuery" placeholder="e.g., How can I improve my digestion?">
+            </div>
+            <button onclick="askChatbot()">Ask Bot</button>
+            <div id="chatLoader" class="loader">Processing...</div>
+            <div id="chatResult" class="result-box"></div>
+        </div>
+    </div>
+
+    <script>
+        async function assessDosha() {
+            const data = {
+                body_frame: document.getElementById('body_frame').value,
+                walk_and_talk: document.getElementById('walk_and_talk').value,
+                weather_reaction: document.getElementById('weather_reaction').value,
+                sweating: document.getElementById('sweating').value,
+                appetite: document.getElementById('appetite').value,
+                skin: document.getElementById('skin').value,
+                hair: document.getElementById('hair').value,
+                lips_and_teeth: document.getElementById('lips_and_teeth').value,
+                eyes: document.getElementById('eyes').value,
+                general_signs: document.getElementById('general_signs').value,
+                memory: document.getElementById('memory').value,
+                mind: document.getElementById('mind').value,
+                mind_on_actions: document.getElementById('mind_on_actions').value,
+                sleep_quality: document.getElementById('sleep_quality').value,
+                emotional_nature: document.getElementById('emotional_nature').value
+            };
+            await makeApiCall('http://127.0.0.1:8000/api/assess-dosha/', data, 'doshaResult', 'doshaLoader');
+        }
+
+        async function generateMeal() {
+            const data = {
+                dosha: document.getElementById('mealDosha').value,
+                target_calories: parseInt(document.getElementById('calories').value) || 2000,
+                target_protein: parseInt(document.getElementById('protein').value) || 70,
+                target_carbs: parseInt(document.getElementById('carbs').value) || 200,
+                target_fat: parseInt(document.getElementById('fat').value) || 60,
+                cuisine: document.getElementById('cuisine').value,
+                
+                // Profile
+                dietary_preference: document.getElementById('dietary_preference').value,
+                goal: document.getElementById('goal').value,
+                weight_kg: parseFloat(document.getElementById('weight_kg').value) || null,
+                height_cm: parseFloat(document.getElementById('height_cm').value) || null,
+                age: parseInt(document.getElementById('age').value) || null,
+                gender: document.getElementById('gender').value
+            };
+            await makeApiCall('http://127.0.0.1:8000/api/generate-meal/', data, 'mealResult', 'mealLoader');
+        }
+
+        async function askChatbot() {
+            const data = {
+                query: document.getElementById('chatQuery').value
+            };
+            if(!data.query) return;
+            await makeApiCall('http://127.0.0.1:8000/api/chat/', data, 'chatResult', 'chatLoader');
+        }
+
+        async function makeApiCall(endpoint, data, resultId, loaderId) {
+            const resultBox = document.getElementById(resultId);
+            const loader = document.getElementById(loaderId);
+            
+            resultBox.style.display = 'none';
+            loader.style.display = 'block';
+
+            try {
+                const response = await fetch(endpoint, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data)
+                });
+                const json = await response.json();
+                
+                if (endpoint.includes('generate-meal') && json.status === 'success') {
+                    let html = `<div style="font-family: Arial, sans-serif;">`;
+                    if (json.llm_doctor_note) {
+                        html += `<div style="background: #e8f5e9; padding: 15px; border-radius: 8px; margin-bottom: 20px;">`;
+                        html += `<strong style="color: #2e7d32; font-size: 1.1em;">🩺 Ayurvedic Doctor's Note:</strong><br/><br/><i style="line-height: 1.5;">${json.llm_doctor_note}</i></div>`;
+                    }
+                    html += `<div style="margin-bottom: 20px; font-size: 1.1em;"><strong>Target Dosha:</strong> ${json.target_dosha} | <strong>Cuisine:</strong> ${json.cuisine_filter}<br/>`;
+                    html += `<strong>Average Daily Macros:</strong> ${json.average_daily_calories} kcal | ${json.average_daily_protein}g Protein | ${json.average_daily_carbs}g Carbs | ${json.average_daily_fat}g Fat</div>`;
+                    
+                    for (const [day, dayData] of Object.entries(json.weekly_plan)) {
+                        html += `<div style="border: 1px solid #e0e0e0; border-radius: 8px; margin-bottom: 15px; padding: 15px; background: #fff;">`;
+                        html += `<h4 style="margin: 0 0 15px 0; color: #2e7d32; border-bottom: 1px solid #eee; padding-bottom: 10px;">${day} <span style="font-size: 0.8em; color: #666; font-weight: normal; float: right;">(${dayData.daily_calories} kcal | ${dayData.daily_protein}g Pro | ${dayData.daily_carbs}g Carb | ${dayData.daily_fat}g Fat)</span></h4>`;
+                        html += `<ul style="margin: 0; padding-left: 20px; line-height: 1.8;">`;
+                        for (const [meal, items] of Object.entries(dayData.meals)) {
+                            html += `<li><strong>${meal.replace(/_/g, ' ')}:</strong> <span style="color: #444;">${items.join(', ')}</span></li>`;
+                        }
+                        html += `</ul></div>`;
+                    }
+                    html += `</div>`;
+                    resultBox.innerHTML = html;
+                } else if (endpoint.includes('assess-dosha') && json.status === 'success') {
+                    let html = `<div style="font-family: Arial, sans-serif;">`;
+                    html += `<h3 style="color: #2e7d32; margin-top: 0;">Dominant Dosha: ${json.dominant_dosha}</h3>`;
+                    html += `<p style="margin-bottom: 10px;"><strong>Probabilities:</strong></p><ul style="line-height: 1.6;">`;
+                    for (const [dosha, prob] of Object.entries(json.predicted_dosha_probabilities)) {
+                        html += `<li>${dosha}: ${(prob * 100).toFixed(0)}%</li>`;
+                    }
+                    html += `</ul></div>`;
+                    resultBox.innerHTML = html;
+                } else if (endpoint.includes('chat') && json.status === 'success') {
+                    let html = `<div style="font-family: Arial, sans-serif;">`;
+                    html += `<div style="background: #e8f5e9; padding: 20px; border-radius: 8px; margin-bottom: 10px; line-height: 1.6;">`;
+                    html += `<strong style="color: #2e7d32;">🤖 Ayurvedic Assistant:</strong><br/><br/>${json.response.replace(/\n/g, '<br/>')}</div>`;
+                    html += `</div>`;
+                    resultBox.innerHTML = html;
+                } else {
+                    resultBox.innerHTML = `<pre style="margin:0; white-space: pre-wrap; font-family: monospace;">${JSON.stringify(json, null, 2)}</pre>`;
+                }
+            } catch (error) {
+                resultBox.textContent = 'Error: ' + error.message;
+            } finally {
+                loader.style.display = 'none';
+                resultBox.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "topic": "Digestion and Agni",
+    "content": "For improving digestion (Agni), Ayurveda recommends consuming a small piece of fresh ginger with a pinch of rock salt before meals. This stimulates the digestive fire (Jatharagni) and helps in breaking down heavy foods. Cumin, coriander, and fennel tea (CCF tea) is also highly effective for balancing digestion across all doshas. There are 13 types of Agni in the body. Jatharagni (stomach fire) is the master Agni. When Agni is strong (Tikshna Agni), digestion is fast. When weak (Manda Agni), food remains undigested and forms Ama (toxins). Sama Agni (balanced digestive fire) is the goal. Signs of healthy Agni include clear tongue coating, regular appetite, and proper elimination. Triphala (combination of Amalaki, Bibhitaki, and Haritaki) is considered the best Rasayana for maintaining Agni balance."
+  },
+  {
+    "id": 2,
+    "topic": "Vata Dosha",
+    "content": "Vata dosha is characterized by the elements of Air (Vayu) and Space (Akasha). It governs all movement in the body including nerve impulses, circulation, respiration, and elimination. Vata's qualities (Gunas) are: Ruksha (dry), Laghu (light), Shita (cold), Khara (rough), Sukshma (subtle), and Chala (mobile). When aggravated, it causes dryness, anxiety, insomnia, constipation, joint pain, and irregular digestion. To pacify Vata, one should consume warm, moist, and grounding foods like cooked grains, root vegetables, and healthy fats like ghee or sesame oil. Avoid cold, raw, and dry foods. Best tastes for Vata: Sweet (Madhura), Sour (Amla), Salty (Lavana). Worst tastes: Bitter (Tikta), Pungent (Katu), Astringent (Kashaya). Vata is most active during autumn/early winter and between 2-6 AM and 2-6 PM."
+  },
+  {
+    "id": 3,
+    "topic": "Pitta Dosha",
+    "content": "Pitta dosha is composed of Fire (Tejas) and Water (Jala), governing metabolism, transformation, and intellect. Pitta's qualities are: Ushna (hot), Tikshna (sharp), Drava (liquid), Snigdha (slightly oily), Amla (sour), and Katu (pungent). Excess Pitta leads to inflammation, acidity, skin rashes, anger, and irritability. To balance Pitta, favor cooling, slightly heavy, and mildly sweet foods such as cucumber, coconut water, sweet fruits, leafy greens, and milk. Pungent, sour, and excessively salty foods should be minimized. Best tastes: Sweet (Madhura), Bitter (Tikta), Astringent (Kashaya). Worst tastes: Sour (Amla), Salty (Lavana), Pungent (Katu). Cooling herbs like Shatavari, Amalaki, and Brahmi are excellent for Pitta. Pitta is dominant during summer and between 10 AM-2 PM and 10 PM-2 AM."
+  },
+  {
+    "id": 4,
+    "topic": "Kapha Dosha",
+    "content": "Kapha dosha consists of Earth (Prithvi) and Water (Jala), providing structure, lubrication, and stability. Kapha's qualities are: Guru (heavy), Shita (cold), Snigdha (oily), Manda (slow), Sthira (stable), Sandra (dense), and Mridu (soft). An imbalance results in lethargy, congestion, weight gain, diabetes, and excessive mucus production. Kapha is balanced by warm, light, and stimulating foods with pungent, bitter, and astringent tastes. Ginger, black pepper, turmeric, and legumes are excellent. Sweet, sour, and heavy oily foods should be avoided. Best tastes: Pungent (Katu), Bitter (Tikta), Astringent (Kashaya). Worst tastes: Sweet (Madhura), Sour (Amla), Salty (Lavana). Kapha is most active in spring and between 6-10 AM and 6-10 PM. Honey (old, not fresh) is the only sweetener recommended for Kapha."
+  },
+  {
+    "id": 5,
+    "topic": "Sleep and Nidra",
+    "content": "To promote sound sleep (Nidra), Ayurveda suggests a calming evening routine (Ratricharya). Drinking warm milk with a pinch of nutmeg (Jatiphala) and cardamom (Ela) before bed can induce restful sleep. Massaging the soles of the feet with warm sesame oil (Abhyanga) or Brahmi oil also helps calm the nervous system. Insomnia (Anidra) is primarily a Vata disorder. Ashwagandha (Withania somnifera) is the premier herb for sleep — it is both a Rasayana (rejuvenative) and a Medhya (brain tonic). Avoid screen time, heavy meals, and stimulants after sunset. The ideal sleep time according to Ayurveda is before 10 PM (during Kapha time) to wake refreshed at 6 AM (before Kapha time ends)."
+  },
+  {
+    "id": 6,
+    "topic": "Rasa (Six Tastes)",
+    "content": "Ayurveda recognizes six tastes (Shad Rasa) that must be included in every meal for complete nutrition and dosha balance. 1) Madhura (Sweet) — Earth + Water — nourishing, builds tissues, calms Vata and Pitta but aggravates Kapha. Examples: rice, wheat, milk, ghee, dates. 2) Amla (Sour) — Earth + Fire — stimulates appetite, aids digestion, calms Vata but aggravates Pitta and Kapha. Examples: lemon, yogurt, tamarind. 3) Lavana (Salty) — Water + Fire — improves taste, aids digestion, calms Vata but aggravates Pitta and Kapha. Examples: rock salt, sea salt. 4) Katu (Pungent) — Fire + Air — kindles Agni, clears congestion, calms Kapha but aggravates Vata and Pitta. Examples: ginger, black pepper, chili. 5) Tikta (Bitter) — Air + Space — detoxifying, reduces inflammation, calms Pitta and Kapha but aggravates Vata. Examples: turmeric, neem, fenugreek. 6) Kashaya (Astringent) — Air + Earth — tightening, drying, calms Pitta and Kapha but aggravates Vata. Examples: pomegranate, unripe banana, turmeric."
+  },
+  {
+    "id": 7,
+    "topic": "Gunas (Twenty Qualities)",
+    "content": "Ayurveda describes 20 fundamental qualities (Gunas) organized in 10 pairs of opposites. Treatment follows the principle 'Samanya increases like, Vishesha decreases unlike'. The pairs are: 1) Guru (Heavy) vs Laghu (Light), 2) Manda (Slow) vs Tikshna (Sharp), 3) Shita (Cold) vs Ushna (Hot), 4) Snigdha (Oily) vs Ruksha (Dry), 5) Shlakshna (Smooth) vs Khara (Rough), 6) Sandra (Dense) vs Drava (Liquid), 7) Mridu (Soft) vs Kathina (Hard), 8) Sthira (Stable) vs Chala (Mobile), 9) Sukshma (Subtle) vs Sthula (Gross), 10) Vishada (Clear) vs Picchila (Cloudy/Sticky). For example, if Vata is aggravated (cold, dry, light), the treatment uses opposite qualities: warm (Ushna), oily (Snigdha), heavy (Guru) foods like ghee-cooked rice with warm spices."
+  },
+  {
+    "id": 8,
+    "topic": "Dhatus (Seven Tissues)",
+    "content": "The body is composed of seven Dhatus (tissues) that are nourished sequentially. Each Dhatu takes approximately 5 days to be nourished from the previous one (total ~35 days for complete tissue renewal). 1) Rasa Dhatu (Plasma/Lymph) — nourished first from digested food, provides hydration. 2) Rakta Dhatu (Blood) — carries oxygen, governed by Pitta. 3) Mamsa Dhatu (Muscle) — provides strength and movement. 4) Meda Dhatu (Fat/Adipose) — provides lubrication and cushioning. 5) Asthi Dhatu (Bone) — provides structure and support, governed by Vata. 6) Majja Dhatu (Marrow/Nerve) — fills bones, governs nervous system. 7) Shukra Dhatu (Reproductive) — the most refined tissue, responsible for fertility and Ojas (vital essence). When Agni is strong, each Dhatu is properly nourished. Weak Agni leads to Dhatu Kshaya (tissue depletion)."
+  },
+  {
+    "id": 9,
+    "topic": "Prakriti (Constitution)",
+    "content": "Prakriti is an individual's unique mind-body constitution determined at conception and remains constant throughout life. It is determined by the dominant dosha(s) at birth. There are 7 main Prakriti types: Vata, Pitta, Kapha, Vata-Pitta, Vata-Kapha, Pitta-Kapha, and the rare Tridoshic (Sama Prakriti). Prakriti assessment considers: body frame (Vata=thin, Pitta=medium, Kapha=large), skin type (Vata=dry, Pitta=sensitive/warm, Kapha=oily/smooth), hair (Vata=dry/curly, Pitta=fine/early grey, Kapha=thick/wavy), appetite (Vata=irregular, Pitta=strong/sharp, Kapha=slow/steady), sleep (Vata=light/interrupted, Pitta=moderate, Kapha=deep/heavy), and temperament (Vata=creative/anxious, Pitta=focused/competitive, Kapha=calm/attached). Vikriti is the current imbalanced state, which differs from Prakriti. Treatment aims to restore Vikriti back to Prakriti."
+  },
+  {
+    "id": 10,
+    "topic": "Dinacharya (Daily Routine)",
+    "content": "Dinacharya is the Ayurvedic daily routine for optimal health. It includes: 1) Wake before sunrise (Brahma Muhurta, ~4:30-6 AM). 2) Ushapana — drink warm water on empty stomach. 3) Elimination (Mala Visarjana). 4) Oil pulling (Gandusha/Kavala) with sesame or coconut oil for 5-15 minutes. 5) Tongue scraping (Jihva Nirlekhana) with copper/stainless steel scraper. 6) Nasya — apply 2 drops of Anu Taila or sesame oil in each nostril. 7) Abhyanga — self-massage with warm oil (sesame for Vata, coconut for Pitta, mustard for Kapha) for 15 minutes. 8) Vyayama — exercise to half capacity (until light sweat appears on forehead). 9) Snana — warm bath/shower. 10) Meditation/Pranayama — at least 10 minutes. 11) Eat meals at consistent times: Breakfast 7-8 AM, Lunch 12-1 PM (largest meal when Agni peaks), Dinner 6-7 PM (lightest meal)."
+  },
+  {
+    "id": 11,
+    "topic": "Ritucharya (Seasonal Routine)",
+    "content": "Ritucharya is the Ayurvedic seasonal regimen. India recognizes 6 Ritus (seasons): 1) Shishira (Late Winter, Jan-Feb) — Kapha accumulates, eat warm/heavy foods, use ginger and black pepper. 2) Vasanta (Spring, Mar-Apr) — Kapha aggravates, eat light/dry foods, do Panchakarma cleansing, favor bitter and astringent tastes. 3) Grishma (Summer, May-Jun) — Pitta increases, eat cooling foods like cucumber, coconut water, watermelon. Avoid excessive exercise. 4) Varsha (Monsoon, Jul-Aug) — Vata aggravates, Agni weakens. Eat light, warm, freshly cooked food. Avoid raw salads and leftover food. 5) Sharad (Autumn, Sep-Oct) — Pitta aggravates, favor sweet and bitter tastes, drink cooling herbs like shatavari. 6) Hemanta (Early Winter, Nov-Dec) — Agni is strongest, eat nourishing, heavy foods, ghee, and warm milk."
+  },
+  {
+    "id": 12,
+    "topic": "Ashwagandha and Adaptogenic Herbs",
+    "content": "Ashwagandha (Withania somnifera) is called the 'Indian Ginseng' and is the most important Rasayana (rejuvenative) herb in Ayurveda. Its Rasa is Tikta (bitter) and Kashaya (astringent), Virya is Ushna (hot), and Vipaka is Madhura (sweet). It pacifies Vata and Kapha but can slightly increase Pitta in excess. Benefits: reduces cortisol and stress, improves sleep quality, enhances muscle strength, boosts immunity (Ojas), and supports thyroid function. Dosage: 300-600 mg of root extract (standardized to 5% withanolides) twice daily with warm milk. Other key adaptogenic herbs: Shatavari (Asparagus racemosus) for Pitta and female reproductive health, Brahmi (Bacopa monnieri) for memory and cognition, Guduchi (Tinospora cordifolia) for immunity, and Tulsi (Ocimum sanctum) for respiratory health and stress."
+  },
+  {
+    "id": 13,
+    "topic": "Turmeric and Anti-inflammatory Foods",
+    "content": "Turmeric (Haridra/Curcuma longa) is considered the most sacred spice in Ayurveda. Rasa: Tikta (bitter), Katu (pungent). Virya: Ushna (hot). Vipaka: Katu (pungent). It pacifies Kapha, and in moderate amounts, all three doshas. Curcumin, its active compound, has powerful anti-inflammatory, antioxidant, and antimicrobial properties. Golden Milk (Haldi Doodh): Mix 1/2 tsp turmeric, a pinch of black pepper (Piperine increases curcumin absorption by 2000%), and 1 tsp ghee in warm milk. Best taken before bed. Other anti-inflammatory Ayurvedic foods: Ginger (Shunti) — the universal remedy, black pepper (Maricha), cinnamon (Twak), cumin (Jeeraka), and coriander (Dhanyaka). The combination of Trikatu (ginger + black pepper + long pepper) is the most powerful Agni-kindling formula."
+  },
+  {
+    "id": 14,
+    "topic": "Panchakarma (Five Detoxification Therapies)",
+    "content": "Panchakarma is Ayurveda's premier detoxification and rejuvenation program consisting of five therapeutic procedures. Pre-procedures (Purvakarma): Snehana (internal and external oleation with medicated ghee/oils) and Swedana (sudation/steam therapy). The five main procedures: 1) Vamana (Therapeutic Emesis) — for Kapha disorders like asthma, obesity, and sinus congestion. 2) Virechana (Therapeutic Purgation) — for Pitta disorders like skin diseases, acidity, and liver issues. 3) Basti (Medicated Enema) — considered the most important karma, primarily for Vata disorders like constipation, arthritis, and neurological issues. Two types: Anuvasana (oil enema) and Niruha (decoction enema). 4) Nasya (Nasal Administration) — for disorders above the clavicle: sinusitis, migraine, hair loss. 5) Raktamokshana (Bloodletting) — for blood-borne toxins and skin diseases. Panchakarma should only be performed under qualified Ayurvedic physician supervision."
+  },
+  {
+    "id": 15,
+    "topic": "Yoga and Pranayama for Doshas",
+    "content": "Yoga and Pranayama are integral to Ayurvedic healing. For Vata types: practice slow, grounding poses (Tadasana, Virabhadrasana, Balasana), use Nadi Shodhana (Alternate Nostril Breathing) to calm the nervous system. Avoid excessive jumping or fast-paced flows. For Pitta types: practice cooling, moderate poses (Paschimottanasana, Ardha Matsyendrasana, Shavasana), use Shitali Pranayama (Cooling Breath) and Chandra Bhedana (Left Nostril Breathing). Avoid hot yoga and excessive competition. For Kapha types: practice vigorous, stimulating poses (Surya Namaskar, Ustrasana, Setu Bandhasana), use Kapalabhati (Skull-Shining Breath) and Bhastrika (Bellows Breath) to increase energy. Morning practice is best. All doshas benefit from Meditation (Dhyana) for at least 20 minutes daily."
+  },
+  {
+    "id": 16,
+    "topic": "Mental Health and Sattva",
+    "content": "Ayurveda classifies mental qualities into three Gunas: Sattva (purity, clarity, harmony), Rajas (activity, passion, restlessness), and Tamas (inertia, darkness, confusion). Mental health treatment aims to increase Sattva. Sattvic foods: fresh fruits, vegetables, whole grains, milk, ghee, honey, nuts. Rajasic foods (increase agitation): caffeine, garlic, onion, spicy foods, fermented foods. Tamasic foods (increase dullness): leftovers, processed foods, alcohol, red meat, mushrooms. For anxiety (Vata mental imbalance): Ashwagandha, Jatamansi (Nardostachys jatamansi), warm oil massage. For anger/irritability (Pitta mental imbalance): Brahmi, Shankhapushpi, cooling diet. For depression/lethargy (Kapha mental imbalance): Vacha (Acorus calamus), Guggulu, vigorous exercise. Medhya Rasayanas (brain tonics): Brahmi, Shankhapushpi, Mandukaparni (Gotu Kola), and Yashtimadhu (Licorice)."
+  },
+  {
+    "id": 17,
+    "topic": "Skin Health and Beauty",
+    "content": "Ayurveda treats skin disorders based on dosha imbalance. Vata skin: dry, rough, prone to wrinkles and dark circles. Treatment: external Abhyanga with sesame oil, internal use of ghee, Shatavari, and Ashwagandha. Pitta skin: sensitive, warm, prone to acne, rashes, and sunburn. Treatment: Kumkumadi Tailam (saffron oil), Aloe Vera gel, Neem (internally and externally), Manjistha (Rubia cordifolia) for blood purification. Kapha skin: oily, thick, prone to cystic acne, fungal infections, and enlarged pores. Treatment: Triphala wash, Neem-Turmeric face pack, dry brushing (Garshana), and lighter oils like sunflower. Universal Ayurvedic beauty tips: use Ubtan (gram flour + turmeric + milk) as a cleanser, apply rose water as toner, drink Aloe Vera juice internally, and consume foods rich in Rasa Dhatu (plasma) for skin glow."
+  },
+  {
+    "id": 18,
+    "topic": "Immunity and Ojas",
+    "content": "Ojas is the subtle essence of all seven Dhatus — it is the vital energy responsible for immunity (Vyadhi Kshamatva), strength, and vitality. Strong Ojas = strong immunity. Signs of healthy Ojas: glowing skin, bright eyes, strong digestion, emotional stability, and resilience to disease. Ojas is depleted by: excessive stress, poor sleep, processed foods, excessive sexual activity, negative emotions, and fasting. Ojas-building foods (Ojasya): warm milk with ghee and saffron, almonds (soaked overnight and peeled), dates, fresh fruits, honey (never heated above 40°C — heated honey becomes toxic/Ama according to Ayurveda). Key Rasayana herbs for immunity: Chyawanprash (the ancient Ayurvedic immunity jam made from Amalaki and 40+ herbs), Ashwagandha, Guduchi (Giloy), Tulsi, and Amalaki (Indian Gooseberry — richest natural source of Vitamin C)."
+  },
+  {
+    "id": 19,
+    "topic": "Women's Health (Stri Roga)",
+    "content": "Ayurveda has a dedicated branch called Stri Roga (Gynecology) and Prasuti Tantra (Obstetrics). For menstrual health: irregular periods are primarily a Vata disorder — treat with Ashoka (Saraca asoca), Shatavari, and warm castor oil packs on the lower abdomen. Painful periods (Dysmenorrhea) involve Vata and Pitta — use Dashamoola (ten roots decoction), ginger tea, and Triphala. Heavy bleeding (Menorrhagia) is a Pitta disorder — use Nagakeshara (Mesua ferrea), Ashoka bark, and cooling diet. For PCOS/PCOD: combine Shatavari + Ashwagandha + Guduchi, follow an anti-Kapha diet (reduce dairy, sugar, wheat), and practice Surya Namaskar. During pregnancy (Garbhini): month-wise diet (Masanumasika Pathya) is prescribed. First trimester: sweet, cold, liquid foods. Ghee with milk is recommended throughout. Avoid Vata-aggravating foods. Post-partum (Sutika): warm, unctuous foods, Dashamoola Kashayam, and Abhyanga with Bala Tailam."
+  },
+  {
+    "id": 20,
+    "topic": "Incompatible Food Combinations (Viruddha Ahara)",
+    "content": "Ayurveda strictly identifies certain food combinations as incompatible (Viruddha Ahara) that create Ama (toxins). Major incompatible combinations: 1) Milk + Fruit (especially sour fruits like citrus, banana with milk is debated but traditionally avoided at night). 2) Milk + Fish — creates skin diseases and blood toxins. 3) Honey + Ghee in equal quantities — considered the most toxic combination. 4) Honey heated above 40°C — transforms into a toxic glue-like substance (Ama). 5) Cold drinks with meals — extinguishes Agni. 6) Yogurt at night — increases Kapha and causes congestion. 7) Milk + Salt (contradictory qualities). 8) Radish + Milk. Proper food combining principles: eat fruit alone (30 min before meals), combine grains with vegetables and legumes, drink warm water with meals (not ice cold), and eat freshly cooked food (not reheated leftovers). Leftover food more than 24 hours old is considered Tamasic."
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Oatmeal with Almonds",
+    "category": "Breakfast",
+    "calories": 350,
+    "protein": 12,
+    "carbs": 45,
+    "fats": 10,
+    "ayurveda": {
+      "rasa": ["Sweet"],
+      "virya": "Cooling",
+      "dosha_effect": {
+        "Vata": "Pacifies",
+        "Pitta": "Pacifies",
+        "Kapha": "Aggravates"
+      }
+    }
+  },
+  {
+    "id": 2,
+    "name": "Spicy Lentil Soup (Dal)",
+    "category": "Lunch",
+    "calories": 250,
+    "protein": 18,
+    "carbs": 30,
+    "fats": 5,
+    "ayurveda": {
+      "rasa": ["Pungent", "Astringent"],
+      "virya": "Heating",
+      "dosha_effect": {
+        "Vata": "Pacifies",
+        "Pitta": "Aggravates",
+        "Kapha": "Pacifies"
+      }
+    }
+  },
+  {
+    "id": 3,
+    "name": "Steamed Quinoa with Broccoli",
+    "category": "Lunch",
+    "calories": 300,
+    "protein": 10,
+    "carbs": 50,
+    "fats": 5,
+    "ayurveda": {
+      "rasa": ["Astringent"],
+      "virya": "Cooling",
+      "dosha_effect": {
+        "Vata": "Aggravates",
+        "Pitta": "Pacifies",
+        "Kapha": "Pacifies"
+      }
+    }
+  },
+  {
+    "id": 4,
+    "name": "Warm Ginger Tea",
+    "category": "Beverage",
+    "calories": 10,
+    "protein": 0,
+    "carbs": 2,
+    "fats": 0,
+    "ayurveda": {
+      "rasa": ["Pungent"],
+      "virya": "Heating",
+      "dosha_effect": {
+        "Vata": "Pacifies",
+        "Pitta": "Aggravates",
+        "Kapha": "Pacifies"
+      }
+    }
+  },
+  {
+    "id": 5,
+    "name": "Cucumber Mint Cooler",
+    "category": "Beverage",
+    "calories": 20,
+    "protein": 0,
+    "carbs": 5,
+    "fats": 0,
+    "ayurveda": {
+      "rasa": ["Sweet", "Astringent"],
+      "virya": "Cooling",
+      "dosha_effect": {
+        "Vata": "Aggravates",
+        "Pitta": "Pacifies",
+        "Kapha": "Aggravates"
+      }
+    }
+  }
+]
