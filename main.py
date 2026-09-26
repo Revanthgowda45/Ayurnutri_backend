@@ -1,8 +1,9 @@
 import os
 import json
 import joblib
-from fastapi import FastAPI
+from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 import pandas as pd
 import numpy as np
@@ -29,7 +30,17 @@ app.add_middleware(
 # 1. Initialize API Keys
 load_dotenv()
 
+APP_SECRET_KEY = os.getenv("EXPO_PUBLIC_BACKEND_API_KEY", "ayurnutri_secure_key_2026")
 
+@app.middleware("http")
+async def verify_api_key_middleware(request: Request, call_next):
+    if request.url.path.startswith("/api/") and request.method != "OPTIONS":
+        api_key = request.headers.get("x-api-key")
+        if not api_key or api_key != APP_SECRET_KEY:
+            return JSONResponse(status_code=401, content={"status": "error", "message": "Unauthorized: Invalid or missing API Key"})
+    
+    response = await call_next(request)
+    return response
 
 # Initialize Groq
 groq_client = None
